@@ -9,6 +9,6 @@ public class Input {
 
         System.out.println("Good morning " + name + "!");
 
-        input.close(); // closes Scanner (fixes warning)
+        input.close(); 
     }
 }
