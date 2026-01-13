@@ -8,5 +8,10 @@ public class product_of_float {
 
         System.out.print("Enter your second decimal number: ");
         float num2=input.nextFloat();
+
+        float result=num1*num2;
+        System.out.println("Answer : " + result);
+
+        input.close();
     }
 }
