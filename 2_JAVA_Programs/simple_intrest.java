@@ -14,7 +14,7 @@ public class simple_intrest {
         float TimePeriod=input.nextFloat();
 
         float SI = ( Principle * ROI * TimePeriod ) / 100; 
-        float CI = ( Principle * ( 1 + ROI/100)*TimePeriod ); 
+        double CI = Principle * Math.pow(( 1 + ROI/100),TimePeriod ); 
 
         System.out.println("Simple intrest is : " + SI);
         System.out.println("Compound intrest is : " + CI);
