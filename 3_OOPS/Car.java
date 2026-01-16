@@ -1,26 +1,36 @@
-public class Car{
+public class Car {
 
     // Instance variables or Attributes
     int noOfWheels;
     float currentFuelInLiter;
-    float maxSpeed;
-    String color;
+    float maxSpeed = 140.25f;
+    String color="Black";
     int noOfSeats;
 
     // Methods
-    public void drive(){
-        System.out.println("car is moving");
-        currentFuelInLiter --;
-    }
-    public void addFuel(float fuel){
-        currentFuelInLiter+=fuel;
+    public void drive() {
+        if (currentFuelInLiter == 0) {
+            System.out.println("Car is out of fuel.please add fuel.");
+        } 
+        else if (currentFuelInLiter < 5) {
+            System.out.println("Car is in reserve mode.please refuel it .");
+            currentFuelInLiter--;
+        }
+        else {
+            System.out.println("car is moving");
+        }
     }
 
-    public float getMaxSpeed(){
+    public void addFuel(float fuel) {
+        currentFuelInLiter += fuel;
+        System.out.println("Fuel is added.");
+    }
+
+    public float getMaxSpeed() {
         return maxSpeed;
     }
 
-    public String getColor(){
+    public String getColor() {
         return color;
     }
 }
