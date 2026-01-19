@@ -1,11 +1,16 @@
 public class Car {
 
-    // Instance variables or Attributes
+    // Static with variables
+    static int totalCars = 0 ;
+ 
+
+    // Instance variables or Attributes  ( Associated with instances only )
     int noOfWheels;
     float currentFuelInLiter;
     float maxSpeed = 140.25f;
     String color = "Black";
     int noOfSeats;
+
 
     // Methods
     public void drive() {
@@ -32,3 +37,5 @@ public class Car {
         return color;
     }
 }
+
+
