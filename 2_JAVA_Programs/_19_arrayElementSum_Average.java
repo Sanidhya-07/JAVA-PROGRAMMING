@@ -2,12 +2,7 @@ public class _19_arrayElementSum_Average {
     public static void main(String[] args) {
         int[] numArray = _18_arrayInput.arrayelements();
 
-        System.out.print("\nYour array is :");
-        int i = 0;
-        while (i < numArray.length) {
-            System.out.print(numArray[i] + "\t");
-            i++;
-        }
+
         double addition = sum(numArray);
         float avg = average(numArray);
         System.out.print("\n\nAddition of all array elements is : " + addition);
