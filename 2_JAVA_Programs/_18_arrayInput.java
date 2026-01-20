@@ -16,7 +16,6 @@ public class _18_arrayInput {
             userArray[i] = input.nextInt();
             i++;
         }
-        input.close();
         return userArray;
 
     }
