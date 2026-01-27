@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class _07_multiplication_table {
 
+    // it is a Function / Method
     public static void table(int num) {
         int i = 1;
         while (i <= 10) {
@@ -15,6 +16,7 @@ public class _07_multiplication_table {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your number : ");
         int number = input.nextInt();
+
         table(number);
 
         input.close();

@@ -19,7 +19,7 @@ public class _10_sum_of_digits {
         while (number > 0) {
 
             int unitPlace = number % 10;
-            sum = sum + unitPlace;
+            sum += unitPlace;
 
             number = number / 10;
 
