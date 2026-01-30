@@ -20,6 +20,10 @@ class _01_swap_numbers {
         num1 = num2;
         num2 = temp;
 
+        // first = first + second;
+        // second = first - second;
+        // first = first - second;
+
         System.out.println("\n\nAfter Swapping :");
         System.out.println("first number : " + num1);
         System.out.println("second number : " + num2);
