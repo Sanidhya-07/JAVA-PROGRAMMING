@@ -6,14 +6,14 @@ public class _25_reverse_array {
         System.out.println("Your array is : ");
         _18_arrayInput.showArray(userArray);
 
-        reverseArray(userArray);
+        userArray = reverseArray(userArray);
 
         System.out.println("\nreverse of array is : ");
         _18_arrayInput.showArray(userArray);
 
     }
 
-    public static void reverseArray(int[] array) {
+    public static int[] reverseArray(int[] array) {
 
         int j = array.length - 1;
 
@@ -25,6 +25,7 @@ public class _25_reverse_array {
             j--;
 
         }
+        return array;
     }
 
 }
