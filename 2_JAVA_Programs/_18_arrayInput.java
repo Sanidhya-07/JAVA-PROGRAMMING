@@ -20,4 +20,10 @@ public class _18_arrayInput {
 
     }
 
+    public static void showArray(int[] array) {
+        for (int i : array) {
+            System.out.printf("  %d\t", i);
+        }
+    }
+
 }
