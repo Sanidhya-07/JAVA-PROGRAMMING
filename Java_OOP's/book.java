@@ -38,7 +38,8 @@ public class book {
         }
     }
 
-    public static int getTotalBooks() {
+    // Static method
+    static int getTotalBooks() {
         return totalBooks;
     }
 
